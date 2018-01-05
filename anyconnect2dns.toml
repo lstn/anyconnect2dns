@@ -1,0 +1,13 @@
+[anyconnect]
+vpn_log_dir = "C:\\path\\.cisco\\vpn\\log\\"
+refresh_interval = 2500
+
+[site."vpn.example.tld"]
+monitor = false
+dns_resolver = "10.1.1.35:53"
+domain = "example.tld"
+
+[site."1.2.3.4:1234"]
+monitor = true
+dns_resolver = "192.10.1.53:53"
+domain = "example2.tld"
